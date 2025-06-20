@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        transition: all ease 0.5s;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-color: #dadada;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .box{
+        height: 300px;
+        width: 40vw;
+        min-width: 300px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 2px solid gray;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 5px #7c7c7c8f;
+    }
+    .container .box .display{
+        height: 100px;
+        width: 100%;
+        background-color: #dddddd;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+    .box .btn button{
+        height: 40px;
+        min-width: 70px;
+        padding: 0px 20px;
+    }
+    .box .btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 style="font-size: 40px; color: #ffffff;">Counter</h2>
+        <div class="box">
+            <div class="display" id="display">
+                0
+            </div>
+            <div class="btn">
+                <button id="btn_1" onclick="increament()">Increament(+)</button>
+                <button id="btn_2" onclick="decreament()">Decreament(-)</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
